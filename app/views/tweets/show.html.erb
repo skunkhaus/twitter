@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+ <p>
+  <strong>Body:</strong>
+  <%= @tweet.body %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tweet.user_id %>
+</p>
+
+<p>
+  <strong>Favorites count:</strong>
+  <%= @tweet.favorites_count %>
+</p>
+
+<div class="button-group">
+	<%= link_to 'New Tweet', new_tweet_path, :class => "btn btn-primary" %>
+</div>
